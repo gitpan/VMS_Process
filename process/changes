@@ -1,0 +1,32 @@
+Revision history for Perl extension VMS::Process.
+
+0.01  Thu Sep 18 12:22:04 1997
+	- Copied over from VMS::ProcInfo. (Yes, I know they're not all that
+      similar. It was a place to start)
+
+0.02  Mon Sep 22 11:40:04 1997
+    - Added support for passing an array ref to process_list()
+    - Added support in for handling COMPARISON and MODIFIER elements
+    - Added in enum support, so you can pass names to STATE, MODE, and
+      JOBTYPE.
+
+0.03  Tue Sep 23 10:00:00 1997
+    - Took the pre and * things out of COMPARISONS and put 'em in
+      MODIFIERS where they really belong.
+
+1.00  Mon Sep 29 11:31:00 1997
+    - Made a few tweaks to get it to compile and run properly on an OpenVMS
+      Alpha 6.2 cluster system. Seems to be release quality, so it is.
+
+1.01  Tue Nov 25 17:50:00 1997
+    - Started the merge of Process and ProcInfo.
+    - Fixed some typos in the README
+    - Disabled the tied hash and object interfaces for right now, until I
+      can get them better sorted out.
+
+1.02  Wed Nov 26 8:19:03 1997
+    - It's alive! Final debugging and testing, and it works. Function only,
+      but it's a darned good start, I think.
+
+1.03  Wed Nov 26 8:57:12 1997
+    - Can't resist tweaking some. Made doc changes to Process.PM
